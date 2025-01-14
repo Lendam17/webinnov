@@ -1,0 +1,112 @@
+/* Typography.css - Styles globaux pour la typographie */
+
+/* Import de la police si nécessaire */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Variables globales */
+:root {
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --line-height-normal: 1.6;
+  --line-height-tight: 1.2;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+}
+
+/* Styles de base */
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Titres */
+h1, .h1 {
+  font-size: 2.2rem;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: 1.8rem;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  font-weight: 700;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  font-weight: 600;
+}
+
+/* Paragraphes */
+p {
+  font-size: 0.9rem;
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Boutons et liens */
+.btn, button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Footer et petits textes */
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Media Queries pour le responsive */
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
+
+  h2, .h2 {
+    font-size: 2.5rem;
+  }
+
+  h3, .h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn, button {
+    font-size: 1.1rem;
+  }
+}
+
+/* Classes utilitaires pour la typographie */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #3b82f6, #7000ff, #ff3b3b);
+}
+
+.font-heading {
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+
+.leading-relaxed {
+  line-height: 1.8;
+}
+
+.tracking-tight {
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
