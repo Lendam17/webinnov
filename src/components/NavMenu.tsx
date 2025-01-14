@@ -9,6 +9,7 @@ const NavMenu = () => {
   const navigation = [
     { name: 'Accueil', href: '/' },
     { name: 'Projets', href: '/projects' },
+    { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact' },
   ];
 
